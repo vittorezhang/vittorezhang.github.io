@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>IT 编程</title>
+    <url>/2021/01/15/IT%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<p>人的一切痛苦，本质上都是对自己无能的愤怒。</p>
+<h2 id="王小波"><a href="#王小波" class="headerlink" title="王小波"></a>王小波</h2><a id="more"></a>
+<p>像电脑一样思考（要学会读代码）<a href="/programConcept/">基本理念</a>.</p>
+]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>名言警句</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Vue3.0+Vite避坑指南</title>
+    <url>/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</url>
+    <content><![CDATA[<h2 id="Vite与vue-Cli的区别"><a href="#Vite与vue-Cli的区别" class="headerlink" title="Vite与vue/Cli的区别"></a>Vite与vue/Cli的区别</h2><p>这两天听了拉勾老师的直播课，总结了当下流行的Vite构建工具结合Vue的使用，以及与vue/Cli的区别。</p>
+<a id="more"></a>
+<p><img src="/images/EvanYou.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="Evan You"></p>
+<h2 id="vite与vueCli作为构建工具的使用"><a href="#vite与vueCli作为构建工具的使用" class="headerlink" title="vite与vueCli作为构建工具的使用"></a>vite与vueCli作为构建工具的使用</h2><p>1.vite与vue2搭配  </p>
+<ul>
+<li>将pack-json特定的vue3.x改为vue2.x版本的依赖</li>
+<li>在vue.config.js中const {createVuePlugin} =  require(‘vite-plugin-vue2’)  =&gt;借助插件<br>备注:vite选择vue框架时默认为vue3.x  </li>
+</ul>
+<p>2.vite与vueCli的区别?</p>
+<ul>
+<li>vite在dev环境下不经过压缩、打包、格式化、只更新改动的文件，在Network中可以看到还是项目中的文件内  容、文件名(.vue文件等等),响应速度是vueCli的7、8倍   </li>
+<li>vueCli在dev环境下也会经过压缩、打包、格式化、并更新所有的文件，在Network中可以看到的是经过编译后的文件内容、文件名(.js文件等等),响应速度不及vite</li>
+</ul>
+<blockquote>
+<p>备注:<br>    1. vite不支持@引入文件(需要换成相对路径)，vueCli支持<br>    2. vite不支持process.env(可以替换为’/‘)  vueCli支持</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>git日常开发常见操作</title>
+    <url>/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</url>
+    <content><![CDATA[<p>我们在进行项目开发的时候，为了更好的管理项目、追溯项目历史，我们会采用代码管理。一般常用的有 git svn 等，但是项目的开发、测试、上线往往都是有很多工作，如果没有一个合适的管理规范那会导致项目出现一下不必要的麻烦。可能各个公司有不同的管理方式，本文分享一下我们一直沿用的 GIT 分支管理规范。</p>
+<a id="more"></a>
+
+<p><img src="/images/git_01.jpg" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="Git Flow"></p>
+<h2 id="Git-常用命令"><a href="#Git-常用命令" class="headerlink" title="Git 常用命令"></a>Git 常用命令</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> &lt;远程URL&gt; 克隆远程仓库代码(默认拉取到的是master分支)</span><br><span class="line">git checkout &lt;分支&gt; 切换到指定分支</span><br><span class="line">git rebase &lt;分支&gt; 合并指定分支的代码</span><br><span class="line">git remote add origin &lt;远程git&gt;</span><br><span class="line">git remote -v 查看git的链接URL</span><br><span class="line">git status 查看仓库状态</span><br><span class="line">git add . 提交本地修改到暂存区</span><br><span class="line">git commit -m <span class="string">&#x27;提交更改的备注&#x27;</span> 将暂存区提交到本地仓库</span><br><span class="line">git push origin &lt;分支&gt; 推送本地仓库更改的分支到远程仓库的分支</span><br></pre></td></tr></table></figure>
+<h2 id="Git-Flow常用的分支"><a href="#Git-Flow常用的分支" class="headerlink" title="Git Flow常用的分支"></a>Git Flow常用的分支</h2><ul>
+<li>Master 分支<br>这个分支的代码是发布到生产环境的代码，这个分支只能从其他分支合并，不能在这个分支直接修改</li>
+<li>Develop 分支<br>这个分支是我们是我们的主开发分支，包含所有要发布到下一个Release的代码，这个主要合并与其他分支，比如Feature分支</li>
+<li>Feature 分支<br>这个分支主要是用来开发一个新的功能，一旦开发完成，我们合并回Develop分支进入下一个Release</li>
+<li>Release 分支<br>当你需要一个发布一个新Release的时候，我们基于Develop分支创建一个Release分支，完成Release后，我们合并到Master和Develop分支</li>
+<li>Hotfix 分支<br>当我们在Master发现新的Bug时候，我们需要创建一个Hotfix, 完成Hotfix后，我们合并回Master和Develop分支，所以Hotfix的改动会进入下一个Release</li>
+</ul>
+<h2 id="Git-回滚版本"><a href="#Git-回滚版本" class="headerlink" title="Git 回滚版本"></a>Git 回滚版本</h2><h4 id="1-命令行操作-以Git-Bash-Here工具为例"><a href="#1-命令行操作-以Git-Bash-Here工具为例" class="headerlink" title="1.命令行操作(以Git Bash Here工具为例)"></a>1.命令行操作(以Git Bash Here工具为例)</h4><ul>
+<li>先显示提交的log （<code>-3</code>为显示最近的3条记录）<br><code>git log -3</code></li>
+<li>回滚到指定的版本 （有<code>soft</code>、<code>hard</code>、<code>mixed</code>等参数）<br>  <code>git reset --hard &lt;版本号&gt;</code></li>
+<li>强制提交（-f 表示force 强制提交）<br><code>git push -f origin &lt;分支名&gt;</code></li>
+</ul>
+<h4 id="2-界面版操作-以TortoiseGit工具为例"><a href="#2-界面版操作-以TortoiseGit工具为例" class="headerlink" title="2.界面版操作(以TortoiseGit工具为例)"></a>2.界面版操作(以TortoiseGit工具为例)</h4><!-- failed to push some refs to 'code.aliyun.com:1607458660/test.git' -->
+<ul>
+<li>先显示提交的log (项目目录下右键点击<code>TortoriseGit</code>=&gt;<code>显示日志</code>）<br><img src="/images/Git01.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"></li>
+<li>选取指定版本 (<code>右键</code>选择<code>重置``xx分支</code>到此版本)<br><img src="/images/Git02.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"></li>
+<li>重置类型 (<code>选择硬重置</code>=&gt;<code>重置工作区和索引(丢弃所有本地变更)</code>,点击<code>确定</code>、<code>关闭窗口</code>)<br><img src="/images/Git03.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"><br>  <img src="/images/Git04.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!">   </li>
+<li>重置的版本 (<code>右键</code>选择<code>推送</code>=&gt;点击<code>勾选</code>已知变更)<br><img src="/images/Git05.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"><br>  <img src="/images/Git06.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"></li>
+</ul>
+<p><strong>在这中间可能会报<code>error:failed to push some refs to &#39;code.aliyun.com:xxx.git&#39;</code></strong><br>莫慌，此时你需要做的就是拉取一下远程的变更并合并到本地，然后再次推送即可！！</p>
+<p><img src="/images/Git08.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!"></p>
+<p>此时就已经顺利回滚到指定版本了</p>
+<h4 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h4><p><a href="https://www.bootcss.com/p/git-guide/">https://www.bootcss.com/p/git-guide/</a><br><a href="https://git-scm.com/book/zh/v2">https://git-scm.com/book/zh/v2</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端杂烩</title>
+    <url>/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</url>
+    <content><![CDATA[<h2 id="javascript"><a href="#javascript" class="headerlink" title="javascript"></a>javascript</h2><p>在项目开发中,数组(Array)是非常常见的数据结构,那什么是数据结构？</p>
+<ul>
+<li>数据结构是计算机存储、组织数据的方式!!!<a id="more"></a>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><blockquote>
+<p><a href="/js/">js数组操作常用Api</a>.</p>
+</blockquote>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>node.js中this的指向</title>
+    <url>/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</url>
+    <content><![CDATA[<p>今天看到一道面试题，是一道关于 this 指向的，觉着挺有价值的，this 的指向在浏览器与 node 中的指向又有区别，而 nodejs 中的 this 又经常会变，其在不同的代码位置中代表不同的涵义,在实际开发中，大家可能也会习惯性写 var self = this 这样的代码，哈哈。本文以此探讨下 this！！</p>
+<a id="more"></a>
+
+<p><img src="/images/logo01.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="干就完了"></p>
+<h2 id="this-的应用场景"><a href="#this-的应用场景" class="headerlink" title="this 的应用场景"></a>this 的应用场景</h2><ul>
+<li>  全局作用域</li>
+<li>  函数作用域</li>
+<li>  在构造函数中</li>
+</ul>
+<h4 id="Node-环境下的全局作用域"><a href="#Node-环境下的全局作用域" class="headerlink" title="Node 环境下的全局作用域"></a>Node 环境下的全局作用域</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">console.log(this); //&#123;&#125;</span><br><span class="line">this.name = <span class="string">&#x27;vittore&#x27;</span>;</span><br><span class="line">console.log(this.name); //vittore</span><br><span class="line">console.log(global.name); //undefined</span><br><span class="line">console.log(module.exports.name); //vittore</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以看到在 Node 环境下，全局中的 this 默认是一个空对象，并且在全局中 this 与 global 对象没有任何的关系,其指向的是 module.exports</p>
+</blockquote>
+<h4 id="Node-环境下的函数作用域"><a href="#Node-环境下的函数作用域" class="headerlink" title="Node 环境下的函数作用域"></a>Node 环境下的函数作用域</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>()&#123;</span><br><span class="line">  this.name = <span class="string">&#x27;vittore&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line">fn();</span><br><span class="line">console.log(this); //&#123;&#125;</span><br><span class="line">console.log(this.name); //undefined</span><br><span class="line">console.log(global.name); //vittore</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以看到在Node环境下,函数中this指向的是global对象，和全局中的this不是同一个对象，相当于给global添加了一个属性，此时与全局中的this已经没有关系了。</p>
+</blockquote>
+<h4 id="Node-环境下的构造函数"><a href="#Node-环境下的构造函数" class="headerlink" title="Node 环境下的构造函数"></a>Node 环境下的构造函数</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">Fn</span></span>()&#123;</span><br><span class="line">  this.name = <span class="string">&#x27;vittore&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line">var fn = new Fn();</span><br><span class="line">console.log(fn.name); //vittore</span><br><span class="line">console.log(global.name); //undefined</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>可以看到在Node环境下,构造函数中this指向的是它的实例，而不是global了。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Node.js</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>浏览器环境中this的指向</title>
+    <url>/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</url>
+    <content><![CDATA[<p>对于一个前端初学者来说，this 的指向是一个必须要掌握的知识点，尤其是 ES6 之后的 this 指向更加变得飘忽不定，我们今天就来了解一下在 browser 中各种情况下 this 的指向。</p>
+<a id="more"></a>
+
+<h2 id="什么是-this"><a href="#什么是-this" class="headerlink" title="什么是 this"></a>什么是 this</h2><p>首先，this 不是一个函数也不是某个对象，它具体指向什么东西取决于我们在哪里去调用这个 this，只有函数调用的时候才会发生 this 的绑定，主要有有以下几种情况</p>
+<ul>
+<li>  全局作用域</li>
+<li>  函数作用域</li>
+<li>  作为对象方法和对象的属性值</li>
+<li>  构造函数中</li>
+<li>  箭头函数中</li>
+<li>  class 类中</li>
+</ul>
+<h4 id="1-全局作用域"><a href="#1-全局作用域" class="headerlink" title="1.全局作用域"></a>1.全局作用域</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">console.log(this === window) //<span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>当我们在全局作用域中调用的时候，this 指向的是 window 对象，相当于 window 调用的这个 tihs</p>
+</blockquote>
+<p><img src="/images/browser01.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="全局作用域中this指向"></p>
+<h4 id="2-函数作用域"><a href="#2-函数作用域" class="headerlink" title="2.函数作用域"></a>2.函数作用域</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">test</span></span>()&#123;</span><br><span class="line"> console.log(this)  //this指向window</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">test</span>()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此时会发现在函数体内 this 也是指向的 window，究其缘由是因为在全局调用的 test 函数，当我们调用的时候会进行默认绑定，也就是绑定到 window 上</p>
+</blockquote>
+<p><img src="/images/browser02.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="函数作用域中this指向"></p>
+<h4 id="3-作为对象方法和对象的属性值"><a href="#3-作为对象方法和对象的属性值" class="headerlink" title="3.作为对象方法和对象的属性值"></a>3.作为对象方法和对象的属性值</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var Person = &#123;</span><br><span class="line">	name: <span class="string">&#x27;vittore&#x27;</span>,</span><br><span class="line">	that: this,</span><br><span class="line">	age: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">		console.log(this) //Person对象</span><br><span class="line">		console.log(this.name) //vittore</span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br><span class="line">console.log(Person.that) //window 类似纯函数调用</span><br><span class="line">Person.age() //调用对象的age方法</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此时会看到，当我们把 this 作为对象的某个方法去调用的时候，this 指向的是这个对象，相当于这个对象调用这个方法</p>
+</blockquote>
+<p><img src="/images/browser03.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="作为对象方法和对象的属性值中this指向"></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var Person = &#123;</span><br><span class="line">	obj: &#123;</span><br><span class="line">		name: <span class="string">&#x27;vittore_&#x27;</span>,</span><br><span class="line">		sex: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">			console.log(this) //obj对象</span><br><span class="line">			console.log(this.name); //vittore_</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br><span class="line">Person.obj.sex() //调用penson对象中的obj对象的sex方法</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>另外，在嵌套对象中，this 指向同样是谁调用则指向谁，这时候是 obj 对象调用的。</p>
+</blockquote>
+<p><img src="/images/browser04.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="嵌套对象中this指向"></p>
+<h4 id="4-构造函数中"><a href="#4-构造函数中" class="headerlink" title="4.构造函数中"></a>4.构造函数中</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var name = <span class="string">&#x27;vittore&#x27;</span></span><br><span class="line"><span class="keyword">function</span> fun(name, age) &#123;</span><br><span class="line">	this.name = name</span><br><span class="line">	this.age = age</span><br><span class="line">&#125;</span><br><span class="line">var obj = new fun(<span class="string">&#x27;vittore_&#x27;</span>, 20)</span><br><span class="line">console.log(obj) //控制台打印如下</span><br></pre></td></tr></table></figure>
+<p><img src="/images/browser05.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="构造函数中this指向"></p>
+<blockquote>
+<p>此时，this 指向的是构造函数所创建出来的实例、即 obj 对象</p>
+</blockquote>
+<h4 id="5-箭头函数中"><a href="#5-箭头函数中" class="headerlink" title="5.箭头函数中"></a>5.箭头函数中</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">    name:<span class="string">&#x27;vittore&#x27;</span>,</span><br><span class="line">    say:()=&gt;&#123;</span><br><span class="line">       console.log(this)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">obj.say()//控制台打印出了window</span><br></pre></td></tr></table></figure>
+<p><img src="/images/browser07.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="箭头函数中this指向"></p>
+<blockquote>
+<p>箭头函数没有自己的 this,会默认继承父级执行上下文的 this，这里的上下文 this 就是 window</p>
+</blockquote>
+<h5 id="5-1-函数执行时会创建一个称为执行上下文的内部对象-可理解为作用域"><a href="#5-1-函数执行时会创建一个称为执行上下文的内部对象-可理解为作用域" class="headerlink" title="5.1 函数执行时会创建一个称为执行上下文的内部对象(可理解为作用域)"></a>5.1 函数执行时会创建一个称为执行上下文的内部对象(可理解为作用域)</h5><blockquote>
+<p><strong>注</strong>:一个执行上下文定义了一个函数执行时的环境,而对象是没有执行上下文的。</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var obj = &#123;</span><br><span class="line">		name: <span class="string">&#x27;vittore_&#x27;</span>,</span><br><span class="line">		// person: <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">		// 	<span class="built_in">return</span> &#123;</span><br><span class="line">		// 		name: <span class="string">&#x27;vittore&#x27;</span>,</span><br><span class="line">		// 		say: () =&gt; &#123;</span><br><span class="line">		// 			console.log(this)</span><br><span class="line">		// 		&#125;,</span><br><span class="line">		// 	&#125;</span><br><span class="line">		// &#125;,</span><br><span class="line">		person: () =&gt; &#123;</span><br><span class="line">			<span class="built_in">return</span> &#123;</span><br><span class="line">				name: <span class="string">&#x27;vittore&#x27;</span>,</span><br><span class="line">				say: () =&gt; &#123;</span><br><span class="line">					console.log(this)</span><br><span class="line">				&#125;,</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">&#125;</span><br><span class="line">obj.person().say()</span><br><span class="line">//调用say方法这里的this指向的是obj对象，因为箭头函数没有this会向上查找，此时上级则是一个普通函数，而普通函数创建时会绑定this，如果person函数也是箭头函数的话this则指向window</span><br></pre></td></tr></table></figure>
+<p><img src="/images/browser08.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="对象中普通函数中this指向"></p>
+<h4 id="6-class-类中"><a href="#6-class-类中" class="headerlink" title="6.class 类中"></a>6.class 类中</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">class Person &#123;</span><br><span class="line">		constructor(name) &#123;</span><br><span class="line">			this.name = name</span><br><span class="line">			this.say = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">				console.log(<span class="string">&#x27;my name is &#x27;</span> + this.name)</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		sleep = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">			console.log(this)</span><br><span class="line">		&#125;</span><br><span class="line">&#125;</span><br><span class="line">var obj = new Person(<span class="string">&#x27;vittore&#x27;</span>)</span><br><span class="line">obj.say() //调用obj对象的say方法 控制台打印 ‘my name is vittore’</span><br><span class="line">obj.sleep() //调用obj对象的sleep方法 打印 obj对象</span><br></pre></td></tr></table></figure>
+<p><img src="/images/browser06.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="class 类中this指向"></p>
+<blockquote>
+<p>可以看到在 class 中的 this 都是指向这个构造函数生成的对象</p>
+</blockquote>
+<h2 id="更改-this-指向（面试的常问点）"><a href="#更改-this-指向（面试的常问点）" class="headerlink" title="更改 this 指向（面试的常问点）"></a>更改 this 指向（面试的常问点）</h2><blockquote>
+<p><strong>可以通过如下方式进行更改</strong></p>
+</blockquote>
+<ul>
+<li>  bind</li>
+<li>  call</li>
+<li>  apply</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">var Person = &#123;</span><br><span class="line">	name: <span class="string">&#x27;vittore&#x27;</span>,</span><br><span class="line">	say: <span class="keyword">function</span> (age) &#123;</span><br><span class="line">		console.log(`my name is <span class="variable">$&#123;this.name&#125;</span>,i am <span class="variable">$&#123;age&#125;</span> years old`) </span><br><span class="line">	&#125;,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var obj = &#123;</span><br><span class="line">	name: <span class="string">&#x27;vittore_&#x27;</span>,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>直接调用<br><strong>Person.say()</strong></p>
+<p><img src="/images/browser09.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="this指向更改前"></p>
+<p><strong>通过bind()</strong></p>
+<ul>
+<li>Person.say.bind(obj,’22’,’第二个参数’,…)()<br><img src="/images/browser10.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="bind()方法更改this指向-第一种传参"></li>
+<li>Person.say.bind(obj)(‘22’,’第二个参数’,…)<br><img src="/images/browser11.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="bind()方法更改this指向-第二种传参"></li>
+</ul>
+<p><strong>注</strong>:bind返回的是一个重新绑定this的函数，因此需要调用,两种传参方式,参数依次加在后面</p>
+<p><strong>通过call()</strong></p>
+<ul>
+<li>Person.say.call(obj,’23’,’第二个参数’)    //call返回的是重新绑定this并且立即调用之后的结果,参数依次加在后面<br><img src="/images/browser12.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="call()方法更改this指向"></li>
+</ul>
+<p><strong>通过apply()</strong></p>
+<ul>
+<li>Person.say.apply(obj,[‘24’,’第二个参数’])  //返回的同样是绑定了this并且立即调用之后的结果，参数是数组格式<br><img src="/images/browser13.png" alt="Philadelphia&#39;s Magic Gardens. This place was so cool!" title="apply()方法更改this指向"></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>browser</tag>
+      </tags>
+  </entry>
+</search>
