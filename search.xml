@@ -219,4 +219,21 @@
         <tag>browser</tag>
       </tags>
   </entry>
+  <entry>
+    <title>源码阅读系列</title>
+    <url>/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</url>
+    <content><![CDATA[<p>这个系列是本人参加了<a href="https://www.yuque.com/ruochuan12">若川</a>大佬的源码共读活动，自己的阅读笔记留存。<br>本系列会记录如何高效学习源码、如何调试源码、以及自己的一些思考、收获等。</p>
+<a id="more"></a>
+
+<ul>
+<li><a href="/validate-npm-package-name-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/">validate-npm-package-name 检测npm包名</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>源码阅读</tag>
+      </tags>
+  </entry>
 </search>
