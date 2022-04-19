@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Vittore</title>
+        <subtitle>高山仰止，景行行止；虽不能至，心向往之。</subtitle>
+        <icon>http://example.com/images/favicon.ico</icon>
+        <link>http://example.com</link>
+        <author>
+          <name>Vittore Zhang</name>
+        </author>
+        <description>所致甚少，唯善学</description>
+        <language>zh-CN</language>
+        <pubDate>Thu, 31 Mar 2022 16:49:10 +0800</pubDate>
+        <lastBuildDate>Thu, 31 Mar 2022 16:49:10 +0800</lastBuildDate>
+        <category term="关键词1" />
+        <category term="关键词2" />
+        <item>
+            <guid isPermalink="true">http://example.com/2022/03/31/IT%E7%BC%96%E7%A8%8B/</guid>
+            <title>IT 编程</title>
+            <link>http://example.com/2022/03/31/IT%E7%BC%96%E7%A8%8B/</link>
+            <category term="读书" scheme="http://example.com/categories/%E8%AF%BB%E4%B9%A6/" />
+            <category term="名言警句" scheme="http://example.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
+            <pubDate>Thu, 31 Mar 2022 16:49:10 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;人的一切痛苦，本质上都是对自己无能的愤怒。&lt;/p&gt;
+&lt;h2 id=&#34;王小波&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#王小波&#34;&gt;#&lt;/a&gt; 王小波&lt;/h2&gt;
+&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;br /&gt;
+ 像电脑一样思考（要学会读代码）&lt;a href=&#34;/programConcept/&#34;&gt;基本理念&lt;/a&gt;.&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</guid>
+            <title>源码阅读系列</title>
+            <link>http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="源码阅读" scheme="http://example.com/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
+            <pubDate>Tue, 29 Mar 2022 10:48:28 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;这个系列是本人参加了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL3J1b2NodWFuMTI=&#34;&gt;若川&lt;/span&gt;大佬的源码共读活动，自己的阅读笔记留存。&lt;br /&gt;
+本系列会记录如何高效学习源码、如何调试源码、以及自己的一些思考、收获等。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/validate-npm-package-name-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/&#34;&gt;validate-npm-package-name 检测 npm 包名&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
+            <title>浏览器环境中this的指向</title>
+            <link>http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="browser" scheme="http://example.com/tags/browser/" />
+            <pubDate>Wed, 21 Apr 2021 09:30:53 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;对于一个前端初学者来说，this 的指向是一个必须要掌握的知识点，尤其是 ES6 之后的 this 指向更加变得飘忽不定，我们今天就来了解一下在 browser 中各种情况下 this 的指向。&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;什么是-this&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是-this&#34;&gt;#&lt;/a&gt; 什么是 this&lt;/h2&gt;
+&lt;p&gt;首先，this 不是一个函数也不是某个对象，它具体指向什么东西取决于我们在哪里去调用这个 this，只有函数调用的时候才会发生 this 的绑定，主要有有以下几种情况&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;全局作用域&lt;/li&gt;
+&lt;li&gt;函数作用域&lt;/li&gt;
+&lt;li&gt;作为对象方法和对象的属性值&lt;/li&gt;
+&lt;li&gt;构造函数中&lt;/li&gt;
+&lt;li&gt;箭头函数中&lt;/li&gt;
+&lt;li&gt;class 类中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;1全局作用域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1全局作用域&#34;&gt;#&lt;/a&gt; 1. 全局作用域&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this &lt;span class=&#34;token operator&#34;&gt;==&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; window&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //true&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;当我们在全局作用域中调用的时候，this 指向的是 window 对象，相当于 window 调用的这个 tihs&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/browser01.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;全局作用域中this指向&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2函数作用域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2函数作用域&#34;&gt;#&lt;/a&gt; 2. 函数作用域&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function-name function&#34;&gt;test&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;  //this指向window&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt; test&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;此时会发现在函数体内 this 也是指向的 window，究其缘由是因为在全局调用的 test 函数，当我们调用的时候会进行默认绑定，也就是绑定到 window 上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/browser02.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;函数作用域中this指向&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3作为对象方法和对象的属性值&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#3作为对象方法和对象的属性值&#34;&gt;#&lt;/a&gt; 3. 作为对象方法和对象的属性值&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var Person &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	that: this,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	age: &lt;span class=&#34;token function-name function&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //Person对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //vittore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;Person.that&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //window 类似纯函数调用&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Person.age&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //调用对象的age方法&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;此时会看到，当我们把 this 作为对象的某个方法去调用的时候，this 指向的是这个对象，相当于这个对象调用这个方法&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/browser03.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;作为对象方法和对象的属性值中this指向&#34; /&gt;&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var Person &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	obj: &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore_&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		sex: &lt;span class=&#34;token function-name function&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //obj对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //vittore_&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;Person.obj.sex&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //调用penson对象中的obj对象的sex方法&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;另外，在嵌套对象中，this 指向同样是谁调用则指向谁，这时候是 obj 对象调用的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/browser04.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;嵌套对象中this指向&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4构造函数中&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#4构造函数中&#34;&gt;#&lt;/a&gt; 4. 构造函数中&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; fun&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;name, age&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	this.name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	this.age &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; age&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var obj &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; new fun&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;vittore_&#39;&lt;/span&gt;, &lt;span class=&#34;token number&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;obj&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //控制台打印如下&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;/images/browser05.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;构造函数中this指向&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;此时，this 指向的是构造函数所创建出来的实例、即 obj 对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;5箭头函数中&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#5箭头函数中&#34;&gt;#&lt;/a&gt; 5. 箭头函数中&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var obj &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    name:&lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    say:&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;       console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;obj.say&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;//控制台打印出了window&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;/images/browser07.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;箭头函数中this指向&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;箭头函数没有自己的 this, 会默认继承父级执行上下文的 this，这里的上下文 this 就是 window&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;51-函数执行时会创建一个称为执行上下文的内部对象可理解为作用域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#51-函数执行时会创建一个称为执行上下文的内部对象可理解为作用域&#34;&gt;#&lt;/a&gt; 5.1 函数执行时会创建一个称为执行上下文的内部对象 (可理解为作用域)&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;：一个执行上下文定义了一个函数执行时的环境，而对象是没有执行上下文的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var obj &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore_&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// person: &lt;span class=&#34;token function-name function&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 	&lt;span class=&#34;token builtin class-name&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 		name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 		say: &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 			console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// 	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		// &lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		person: &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token builtin class-name&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				say: &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;					console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;obj.person&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;.say&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;//调用say方法这里的this指向的是obj对象，因为箭头函数没有this会向上查找，此时上级则是一个普通函数，而普通函数创建时会绑定this，如果person函数也是箭头函数的话this则指向window&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;/images/browser08.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;对象中普通函数中this指向&#34; /&gt;&lt;/p&gt;
+&lt;h4 id=&#34;6class-类中&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#6class-类中&#34;&gt;#&lt;/a&gt; 6.class 类中&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;class Person &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		constructor&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			this.name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; name&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			this.say &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function-name function&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;				console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;my name is &#39;&lt;/span&gt; + this.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token function&#34;&gt;sleep&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token function-name function&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;			console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var obj &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; new Person&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;obj.say&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //调用obj对象的say方法 控制台打印 ‘my name is vittore’&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;obj.sleep&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; //调用obj对象的sleep方法 打印 obj对象&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;/images/browser06.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;class 类中this指向&#34; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;可以看到在 class 中的 this 都是指向这个构造函数生成的对象&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;更改-this-指向面试的常问点&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#更改-this-指向面试的常问点&#34;&gt;#&lt;/a&gt; 更改 this 指向（面试的常问点）&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;可以通过如下方式进行更改&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;bind&lt;/li&gt;
+&lt;li&gt;call&lt;/li&gt;
+&lt;li&gt;apply&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var Person &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	say: &lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;age&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;		console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token variable&#34;&gt;&lt;span class=&#34;token variable&#34;&gt;`&lt;/span&gt;my name is $&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;this.name&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,i am $&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;age&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt; years old&lt;span class=&#34;token variable&#34;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt; &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var obj &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;	name: &lt;span class=&#34;token string&#34;&gt;&#39;vittore_&#39;&lt;/span&gt;,&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;直接调用&lt;br /&gt;
+&lt;strong&gt; Person.say ()&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/browser09.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;this指向更改前&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通过 bind ()&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Person.say.bind (obj,&#39;22&#39;,&#39; 第二个参数 &#39;,...)()&lt;br /&gt;
+&lt;img data-src=&#34;/images/browser10.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;bind()方法更改this指向-第一种传参&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;Person.say.bind (obj)(&#39;22&#39;,&#39; 第二个参数 &#39;,...)&lt;br /&gt;
+&lt;img data-src=&#34;/images/browser11.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;bind()方法更改this指向-第二种传参&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;注&lt;/strong&gt;:bind 返回的是一个重新绑定 this 的函数，因此需要调用，两种传参方式，参数依次加在后面&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;通过 call ()&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Person.say.call (obj,&#39;23&#39;,&#39; 第二个参数 &#39;)    //call 返回的是重新绑定 this 并且立即调用之后的结果，参数依次加在后面&lt;br /&gt;
+&lt;img data-src=&#34;/images/browser12.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;call()方法更改this指向&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;通过 apply ()&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Person.say.apply (obj,[&#39;24&#39;,&#39; 第二个参数 &#39;])  // 返回的同样是绑定了 this 并且立即调用之后的结果，参数是数组格式&lt;br /&gt;
+&lt;img data-src=&#34;/images/browser13.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;apply()方法更改this指向&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
+            <title>node.js中this的指向</title>
+            <link>http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="Node.js" scheme="http://example.com/tags/Node-js/" />
+            <pubDate>Tue, 20 Apr 2021 17:37:39 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;今天看到一道面试题，是一道关于 this 指向的，觉着挺有价值的，this 的指向在浏览器与 node 中的指向又有区别，而 nodejs 中的 this 又经常会变，其在不同的代码位置中代表不同的涵义，在实际开发中，大家可能也会习惯性写 var self = this 这样的代码，哈哈。本文以此探讨下 this！！&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/logo01.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;干就完了&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;this-的应用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-的应用场景&#34;&gt;#&lt;/a&gt; this 的应用场景&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;全局作用域&lt;/li&gt;
+&lt;li&gt;函数作用域&lt;/li&gt;
+&lt;li&gt;在构造函数中&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;node-环境下的全局作用域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#node-环境下的全局作用域&#34;&gt;#&lt;/a&gt; Node 环境下的全局作用域&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;this.name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //vittore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;global.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //undefined&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;module.exports.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //vittore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;可以看到在 Node 环境下，全局中的 this 默认是一个空对象，并且在全局中 this 与 global 对象没有任何的关系，其指向的是 module.exports&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;node-环境下的函数作用域&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#node-环境下的函数作用域&#34;&gt;#&lt;/a&gt; Node 环境下的函数作用域&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function-name function&#34;&gt;fn&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  this.name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;fn&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;this.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //undefined&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;global.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //vittore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;可以看到在 Node 环境下，函数中 this 指向的是 global 对象，和全局中的 this 不是同一个对象，相当于给 global 添加了一个属性，此时与全局中的 this 已经没有关系了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;node-环境下的构造函数&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#node-环境下的构造函数&#34;&gt;#&lt;/a&gt; Node 环境下的构造函数&lt;/h4&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token keyword&#34;&gt;function&lt;/span&gt; &lt;span class=&#34;token function-name function&#34;&gt;Fn&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#123;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  this.name &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;token string&#34;&gt;&#39;vittore&#39;&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token punctuation&#34;&gt;&amp;#125;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;var fn &lt;span class=&#34;token operator&#34;&gt;=&lt;/span&gt; new Fn&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;fn.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //vittore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;console.log&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;global.name&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;token punctuation&#34;&gt;;&lt;/span&gt; //undefined&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;blockquote&gt;
+&lt;p&gt;可以看到在 Node 环境下，构造函数中 this 指向的是它的实例，而不是 global 了。&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</guid>
+            <title>git日常开发常见操作</title>
+            <link>http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <pubDate>Mon, 19 Apr 2021 17:06:12 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;我们在进行项目开发的时候，为了更好的管理项目、追溯项目历史，我们会采用代码管理。一般常用的有 git svn 等，但是项目的开发、测试、上线往往都是有很多工作，如果没有一个合适的管理规范那会导致项目出现一下不必要的麻烦。可能各个公司有不同的管理方式，本文分享一下我们一直沿用的 GIT 分支管理规范。&lt;br /&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/git_01.jpg&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;Git Flow&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;git-常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-常用命令&#34;&gt;#&lt;/a&gt; Git 常用命令&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;远程URL&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 克隆远程仓库代码&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;默认拉取到的是master分支&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; checkout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 切换到指定分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; rebase &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 合并指定分支的代码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; origin &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;远程git&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote -v 查看git的链接URL&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status 查看仓库状态&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; 提交本地修改到暂存区&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit -m &lt;span class=&#34;token string&#34;&gt;&#39;提交更改的备注&#39;&lt;/span&gt; 将暂存区提交到本地仓库&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push origin &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 推送本地仓库更改的分支到远程仓库的分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;git-flow常用的分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-flow常用的分支&#34;&gt;#&lt;/a&gt; Git Flow 常用的分支&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Master 分支&lt;br /&gt;
+这个分支的代码是发布到生产环境的代码，这个分支只能从其他分支合并，不能在这个分支直接修改&lt;/li&gt;
+&lt;li&gt;Develop 分支&lt;br /&gt;
+这个分支是我们是我们的主开发分支，包含所有要发布到下一个 Release 的代码，这个主要合并与其他分支，比如 Feature 分支&lt;/li&gt;
+&lt;li&gt;Feature 分支&lt;br /&gt;
+这个分支主要是用来开发一个新的功能，一旦开发完成，我们合并回 Develop 分支进入下一个 Release&lt;/li&gt;
+&lt;li&gt;Release 分支&lt;br /&gt;
+当你需要一个发布一个新 Release 的时候，我们基于 Develop 分支创建一个 Release 分支，完成 Release 后，我们合并到 Master 和 Develop 分支&lt;/li&gt;
+&lt;li&gt;Hotfix 分支&lt;br /&gt;
+当我们在 Master 发现新的 Bug 时候，我们需要创建一个 Hotfix, 完成 Hotfix 后，我们合并回 Master 和 Develop 分支，所以 Hotfix 的改动会进入下一个 Release&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;git-回滚版本&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-回滚版本&#34;&gt;#&lt;/a&gt; Git 回滚版本&lt;/h2&gt;
+&lt;h4 id=&#34;1命令行操作以git-bash-here工具为例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#1命令行操作以git-bash-here工具为例&#34;&gt;#&lt;/a&gt; 1. 命令行操作 (以 Git Bash Here 工具为例)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;先显示提交的 log （ &lt;code&gt;-3&lt;/code&gt;  为显示最近的 3 条记录）&lt;br /&gt;
+ &lt;code&gt;git log -3&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;回滚到指定的版本 （有 &lt;code&gt;soft&lt;/code&gt; 、 &lt;code&gt;hard&lt;/code&gt; 、 &lt;code&gt;mixed&lt;/code&gt;  等参数）&lt;br /&gt;
+ &lt;code&gt;git reset --hard &amp;lt;版本号&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;强制提交（-f 表示 force 强制提交）&lt;br /&gt;
+ &lt;code&gt;git push -f origin &amp;lt;分支名&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2界面版操作以tortoisegit工具为例&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#2界面版操作以tortoisegit工具为例&#34;&gt;#&lt;/a&gt; 2. 界面版操作 (以 TortoiseGit 工具为例)&lt;/h4&gt;
+&lt;p&gt;&amp;lt;!-- failed to push some refs to &#39;code.aliyun.com:1607458660/test.git&#39; --&amp;gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先显示提交的 log (项目目录下右键点击 &lt;code&gt;TortoriseGit&lt;/code&gt; =&amp;gt; &lt;code&gt;显示日志&lt;/code&gt; ）&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git01.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;选取指定版本 ( &lt;code&gt;右键&lt;/code&gt; 选择 &lt;code&gt;重置``xx分支&lt;/code&gt; 到此版本)&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git02.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;重置类型 ( &lt;code&gt;选择硬重置&lt;/code&gt;  =&amp;gt; &lt;code&gt;重置工作区和索引(丢弃所有本地变更)&lt;/code&gt; , 点击 &lt;code&gt;确定&lt;/code&gt; 、 &lt;code&gt;关闭窗口&lt;/code&gt; )&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git03.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git04.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;重置的版本 ( &lt;code&gt;右键&lt;/code&gt; 选择 &lt;code&gt;推送&lt;/code&gt;  =&amp;gt; 点击 &lt;code&gt;勾选&lt;/code&gt; 已知变更)&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git05.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;br /&gt;
+&lt;img data-src=&#34;/images/Git06.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;在这中间可能会报 &lt;code&gt;error:failed to push some refs to &#39;code.aliyun.com:xxx.git&#39;&lt;/code&gt; &lt;/strong&gt;&lt;br /&gt;
+ 莫慌，此时你需要做的就是拉取一下远程的变更并合并到本地，然后再次推送即可！！&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/images/Git08.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;此时就已经顺利回滚到指定版本了&lt;/p&gt;
+&lt;h4 id=&#34;参考文章&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#参考文章&#34;&gt;#&lt;/a&gt; 参考文章：&lt;/h4&gt;
+&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYm9vdGNzcy5jb20vcC9naXQtZ3VpZGUv&#34;&gt;https://www.bootcss.com/p/git-guide/&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3Yy&#34;&gt;https://git-scm.com/book/zh/v2&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</guid>
+            <title>Vue3.0+Vite避坑指南</title>
+            <link>http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <pubDate>Fri, 16 Apr 2021 19:06:47 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Vite（法语意为 &amp;quot;快速的&amp;quot;，发音 /vit/，发音同 &amp;quot;veet&amp;quot;）是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：&lt;/p&gt;
+&lt;p&gt;一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。&lt;/p&gt;
+&lt;p&gt;一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。&lt;/p&gt;
+&lt;p&gt;Vite 意在提供开箱即用的配置，同时它的 插件 API 和 JavaScript API 带来了高度的可扩展性，并有完整的类型支持。&lt;br /&gt;
+&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vite与vuecli的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vite与vuecli的区别&#34;&gt;#&lt;/a&gt; Vite 与 vue/Cli 的区别&lt;/h2&gt;
+&lt;p&gt;这两天听了拉勾老师的直播课，总结了当下流行的 Vite 构建工具结合 Vue 的使用，以及与 vue/Cli 的区别。&lt;br /&gt;
+&lt;!-- more --&gt;&lt;br /&gt;
+&lt;img data-src=&#34;/images/EvanYou.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;Evan You&#34; /&gt;&lt;/p&gt;
+&lt;h2 id=&#34;vite与vuecli作为构建工具的使用&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vite与vuecli作为构建工具的使用&#34;&gt;#&lt;/a&gt; vite 与 vueCli 作为构建工具的使用&lt;/h2&gt;
+&lt;p&gt;1.vite 与 vue2 搭配&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将 pack-json 特定的 vue3.x 改为 vue2.x 版本的依赖&lt;/li&gt;
+&lt;li&gt;在 vue.config.js 中 const {createVuePlugin} =  require (&#39;vite-plugin-vue2&#39;)  =&amp;gt; 借助插件&lt;br /&gt;
+备注:vite 选择 vue 框架时默认为 vue3.x&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.vite 与 vueCli 的区别？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;vite 在 dev 环境下不经过压缩、打包、格式化、只更新改动的文件，在 Network 中可以看到还是项目中的文件内  容、文件名 (.vue 文件等等), 响应速度是 vueCli 的 7、8 倍&lt;/li&gt;
+&lt;li&gt;vueCli 在 dev 环境下也会经过压缩、打包、格式化、并更新所有的文件，在 Network 中可以看到的是经过编译后的文件内容、文件名 (.js 文件等等), 响应速度不及 vite&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;备注:&lt;br /&gt;
+1. vite 不支持 @引入文件 (需要换成相对路径)，vueCli 支持&lt;br /&gt;
+ 2. vite 不支持 process.env (可以替换为 &#39;/&#39;)  vueCli 支持&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</guid>
+            <title>前端杂烩</title>
+            <link>http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</link>
+            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <pubDate>Mon, 29 Mar 2021 17:58:38 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;web 集成了所有博主在开发与学习中接触过以及使用过的前端技术，以及相关的使用和介绍，例如：React、Vue2、Vue3、React-Redux、Redux、Vuex、Express、koa 以及各种技术...&lt;/p&gt;
+&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;javascript&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#javascript&#34;&gt;#&lt;/a&gt; javascript&lt;/h2&gt;
+&lt;p&gt;在项目开发中，数组 (Array) 是非常常见的数据结构，那什么是数据结构？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;数据结构是计算机存储、组织数据的方式！！！&lt;br /&gt;
+&lt;!-- more --&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;array&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#array&#34;&gt;#&lt;/a&gt; Array&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;/js/&#34;&gt;js 数组操作常用 Api&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
