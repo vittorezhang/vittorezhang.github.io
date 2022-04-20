@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/images/images/favicon.jpg"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="Vittore" href="http://example.com/rss.xml"><link rel="alternate" type="application/atom+xml" title="Vittore" href="http://example.com/atom.xml"><link rel="alternate" type="application/json" title="Vittore" href="http://example.com/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><link rel="canonical" href="http://example.com/axios-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"><title>axios-源码阅读 | Yume Shoka = Vittore = 高山仰止，景行行止；虽不能至，心向往之。</title><meta name="generator" content="Hexo 5.4.2"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">axios-源码阅读</h1></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">Yume Shoka</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1gicitcxhpij20zk0m8hdt.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giciundwu5j20zk0m8n9e.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li><li class="item" data-background-image="https://tva4.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="page wrap"><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://example.com/axios-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/myAvatar.jpg"><meta itemprop="name" content="Vittore Zhang"><meta itemprop="description" content="高山仰止，景行行止；虽不能至，心向往之。, 所致甚少，唯善学"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Vittore"></span><div class="body md" itemprop="articleBody"><ul><li>源码地址：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2F4aW9zL2F4aW9z">https://github.com/axios/axios</span></li><li>参考文章：<span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uY24vcG9zdC83MDQyNjEwNjc5ODE1MjQxNzU4">https://juejin.cn/post/7042610679815241758</span></li></ul><p><strong>axios</strong> 这个库常应用于商业项目开发，本文主要介绍 axios 源码中 utils 的工具函数。</p><h2 id="通过源码地址-拉取源码"><a class="anchor" href="#通过源码地址-拉取源码">#</a> 通过源码地址、拉取源码</h2><pre><code>git clone https://github.com/axios/axios.git
+
+cd axios
+
+npm start
+
+打开 http://localhost:3000/
+</code></pre><p><strong><span class="exturl" data-url="aHR0cDovL3huLS1DT05UUklCVVRJTkctdnoweG40NWEubWQ=">打开 CONTRIBUTING.md</span>，可以看到在 54 行的内容：</strong></p><pre><code>Running sandbox in browser
+
+npm start
+Open 127.0.0.1:3000
+</code></pre><h2 id="源码分析"><a class="anchor" href="#源码分析">#</a> 源码分析</h2><p><strong>根目录下的 lib 目录有个 axios 入口文件，我们在这个文件查阅（41 ~ 296 行）</strong></p><p><strong>isArray</strong> 判断数组</p><pre><code>/**
+ * Determine if a value is an Array
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is an Array, otherwise false
+ */
+function isArray(val) &#123;
+  return Array.isArray(val);
+&#125; 
+</code></pre><p><strong>isUndefined 判断 Undefined</strong></p><pre><code>/**
+ * Determine if a value is undefined
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if the value is undefined, otherwise false
+ */
+function isUndefined(val) &#123;
+  return typeof val === 'undefined';
+&#125;
+</code></pre><p><strong>isBuffer 判断 buffer</strong></p><pre><code>/**
+ * Determine if a value is a Buffer
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Buffer, otherwise false
+ */
+function isBuffer(val) &#123;
+  return val !== null &amp;&amp; !isUndefined(val) &amp;&amp; val.constructor !== null &amp;&amp; !isUndefined(val.constructor)
+    &amp;&amp; typeof val.constructor.isBuffer === 'function' &amp;&amp; val.constructor.isBuffer(val);
+&#125;
+</code></pre><p><strong>isString 判断 string</strong></p><pre><code>/**
+ * Determine if a value is a String
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a String, otherwise false
+ */
+function isString(val) &#123;
+  return typeof val === 'string';
+&#125;
+</code></pre><p><strong>isNumber 判断 number</strong></p><pre><code>/**
+ * Determine if a value is a Number
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Number, otherwise false
+ */
+function isNumber(val) &#123;
+  return typeof val === 'number';
+&#125;
+</code></pre><p><strong>isObject 判断 object</strong></p><pre><code>/**
+ * Determine if a value is an Object
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is an Object, otherwise false
+ */
+function isObject(val) &#123;
+  return val !== null &amp;&amp; typeof val === 'object';
+&#125;
+</code></pre><p><strong>isPlainObject 判断 纯对象</strong></p><pre><code>/**
+ * Determine if a value is a plain Object
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @return &#123;boolean&#125; True if value is a plain Object, otherwise false
+ */
+function isPlainObject(val) &#123;
+  if (kindOf(val) !== 'object') &#123;
+    return false;
+  &#125;
+
+  var prototype = Object.getPrototypeOf(val);
+  return prototype === null || prototype === Object.prototype;
+&#125;
+//解析: 纯对象就是用&#123;&#125;或new Object()创建的对象。 
+  等同与如下检测
+function isPlainObject(val) &#123;
+  if (Object.prototype.toString.call(val) !== '[object Object]') &#123;
+    return false;
+  &#125;
+
+  var prototype = Object.getPrototypeOf(val);
+  return prototype === null || prototype === Object.prototype;
+&#125;
+</code></pre><p><strong>isDate 判断 Date</strong></p><pre><code>/**
+ * Determine if a value is a Date
+ *
+ * @function
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Date, otherwise false
+ */
+ function isDate(val) &#123;
+  return Object.prototype.toString.call(val) === '[object Date]';
+&#125;
+</code></pre><p><strong>isFile 判断文件类型</strong><br>/**<br>* Determine if a value is a File<br>*<br>* @function<br>* @param {Object} val The value to test<br>* @returns {boolean} True if value is a File, otherwise false<br>*/<br>function isFile(val) {<br>return Object.prototype.toString.call(val) === '[object File]';<br>}</p><p><strong>isBlob 判断 Blob</strong></p><pre><code>/**
+ * Determine if a value is a Blob
+ *
+ * @function
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Blob, otherwise false
+ */
+function isBlob(val) &#123;
+  return Object.prototype.toString.call(val) === '[object Blob]';
+&#125;
+</code></pre><p><strong>isFunction 判断函数</strong></p><pre><code>/**
+ * Determine if a value is a Function
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Function, otherwise false
+ */
+function isFunction(val) &#123;
+  return toString.call(val) === '[object Function]';
+&#125;
+</code></pre><p><strong>isStream 判断是否是流</strong></p><pre><code>/**
+ * Determine if a value is a Stream
+ *
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a Stream, otherwise false
+ */
+function isStream(val) &#123;
+  return isObject(val) &amp;&amp; isFunction(val.pipe);
+&#125;
+</code></pre><p><strong>isFormData 判断 FormData</strong></p><pre><code>/**
+ * Determine if a value is a FormData
+ *
+ * @param &#123;Object&#125; thing The value to test
+ * @returns &#123;boolean&#125; True if value is an FormData, otherwise false
+ */
+function isFormData(thing) &#123;
+  var pattern = '[object FormData]';
+  return thing &amp;&amp; (
+    (typeof FormData === 'function' &amp;&amp; thing instanceof FormData) ||
+    toString.call(thing) === pattern ||
+    (isFunction(thing.toString) &amp;&amp; thing.toString() === pattern)
+  );
+&#125;
+</code></pre><p><strong>isURLSearchParams 判断 URLSearchParams</strong></p><pre><code>/**
+ * Determine if a value is a URLSearchParams object
+ * @function
+ * @param &#123;Object&#125; val The value to test
+ * @returns &#123;boolean&#125; True if value is a URLSearchParams object, otherwise false
+ */
+function isURLSearchParams(val) &#123;
+  return typeof URLSearchParams !== 'undefined' &amp;&amp; val instanceof URLSearchParams;
+&#125;
+</code></pre><p><strong>trim 去除首尾空格</strong></p><pre><code>/**
+ * Trim excess whitespace off the beginning and end of a string
+ *
+ * @param &#123;String&#125; str The String to trim
+ * @returns &#123;String&#125; The String freed of excess whitespace
+ */
+function trim(str) &#123;
+  return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
+&#125;
+</code></pre><p><strong>isStandardBrowserEnv 判断标准浏览器环境</strong></p><pre><code>/**
+ * Determine if we're running in a standard browser environment
+ *
+ * This allows axios to run in a web worker, and react-native.
+ * Both environments support XMLHttpRequest, but not fully standard globals.
+ *
+ * web workers:
+ *  typeof window -&gt; undefined
+ *  typeof document -&gt; undefined
+ *
+ * react-native:
+ *  navigator.product -&gt; 'ReactNative'
+ * nativescript
+ *  navigator.product -&gt; 'NativeScript' or 'NS'
+ */
+function isStandardBrowserEnv() &#123;
+  if (typeof navigator !== 'undefined' &amp;&amp; (navigator.product === 'ReactNative' ||
+                                           navigator.product === 'NativeScript' ||
+                                           navigator.product === 'NS')) &#123;
+    return false;
+  &#125;
+  return (
+    typeof window !== 'undefined' &amp;&amp;
+    typeof document !== 'undefined'
+  );
+&#125;
+</code></pre><p><strong>forEach 遍历对象或数组</strong></p><pre><code>/**
+ * Iterate over an Array or an Object invoking a function for each item.
+ *
+ * If `obj` is an Array callback will be called passing
+ * the value, index, and complete array for each item.
+ *
+ * If 'obj' is an Object callback will be called passing
+ * the value, key, and complete object for each property.
+ *
+ * @param &#123;Object|Array&#125; obj The object to iterate
+ * @param &#123;Function&#125; fn The callback to invoke for each item
+ */
+function forEach(obj, fn) &#123;
+  // Don't bother if no value provided
+  if (obj === null || typeof obj === 'undefined') &#123;
+    return;
+  &#125;
+
+  // Force an array if not already something iterable
+  if (typeof obj !== 'object') &#123;
+    /*eslint no-param-reassign:0*/
+    obj = [obj];
+  &#125;
+
+  if (isArray(obj)) &#123;
+    // Iterate over array values
+    for (var i = 0, l = obj.length; i &lt; l; i++) &#123;
+      fn.call(null, obj[i], i, obj);
+    &#125;
+  &#125; else &#123;
+    // Iterate over object keys
+    for (var key in obj) &#123;
+      if (Object.prototype.hasOwnProperty.call(obj, key)) &#123;
+        fn.call(null, obj[key], key, obj);
+      &#125;
+    &#125;
+  &#125;
+&#125;
+</code></pre><h2 id="源码阅读收获"><a class="anchor" href="#源码阅读收获">#</a> 源码阅读收获</h2><p><strong>通过这期的源码阅读，细致了解到了一些 utils.js 中非常实用的工具函数，可以把这些代码或思想应用到自己项目中来</strong></p></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2022-04-20 17:37:03" itemprop="dateModified" datetime="2022-04-20T17:37:03+08:00">2022-04-20</time> </span><span id="axios-源码阅读/" class="item leancloud_visitors" data-flag-title="axios-源码阅读" title="阅读次数"><span class="icon"><i class="ic i-eye"></i> </span><span class="text">阅读次数</span> <span class="leancloud-visitors-count"></span> <span class="text">次</span></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.jpg" alt="Vittore Zhang 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.jpg" alt="Vittore Zhang 支付宝"><p>支付宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>Vittore Zhang <i class="ic i-at"><em>@</em></i>Vittore</li><li class="link"><strong>本文链接：</strong> <a href="http://example.com/axios-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" title="axios-源码阅读">http://example.com/axios-源码阅读/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E6%BA%90%E7%A0%81%E5%9C%B0%E5%9D%80-%E6%8B%89%E5%8F%96%E6%BA%90%E7%A0%81"><span class="toc-number">1.</span> <span class="toc-text">通过源码地址、拉取源码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">源码分析</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E6%94%B6%E8%8E%B7"><span class="toc-number">3.</span> <span class="toc-text">源码阅读收获</span></a></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="Vittore Zhang" data-src="/images/myAvatar.jpg"><p class="name" itemprop="name">Vittore Zhang</p><div class="description" itemprop="description">所致甚少，唯善学</div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">7</span> <span class="name">文章</span></a></div><div class="item categories"><a href="/categories/"><span class="count">2</span> <span class="name">分类</span></a></div><div class="item tags"><a href="/tags/"><span class="count">5</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tL1ZpdHRvcmUwMTE1" title="https:&#x2F;&#x2F;github.com&#x2F;Vittore0115"><i class="ic i-github"></i></span> <span class="exturl item zhihu" data-url="aHR0cHM6Ly93d3cuemhpaHUuY29tL3Blb3BsZS93ZWktdGFvLTI0LTgz" title="https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;wei-tao-24-83"><i class="ic i-zhihu"></i></span> <span class="exturl item weibo" data-url="aHR0cHM6Ly93ZWliby5jb20vdS82NTk4ODc5NDg1" title="https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;6598879485"><i class="ic i-weibo"></i></span> <span class="exturl item juejin" data-url="aHR0cHM6Ly9qdWVqaW4uY24vdXNlci8zMTIyMjY4NzU2MjU1Mjk0" title="https:&#x2F;&#x2F;juejin.cn&#x2F;user&#x2F;3122268756255294"><i class="ic i-instagram"></i></span></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li></ul></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/" title="浏览器环境中this的指向">浏览器环境中this的指向</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/" title="node.js中this的指向">node.js中this的指向</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/" title="源码阅读系列">源码阅读系列</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E8%AF%BB%E4%B9%A6/" title="分类于 读书">读书</a></div><span><a href="/2022/04/20/IT%E7%BC%96%E7%A8%8B/" title="IT 编程">IT 编程</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/" title="git日常开发常见操作">git日常开发常见操作</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/" title="前端杂烩">前端杂烩</a></span></li><li class="item"><div class="breadcrumb"><a href="/categories/%E6%8A%80%E6%9C%AF/" title="分类于 技术">技术</a></div><span><a href="/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/" title="Vue3.0+Vite避坑指南">Vue3.0+Vite避坑指南</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; <span>ICP备案号:</span><a class="theme-link" target="_blank" href="https://beian.miit.gov.cn/">粤ICP备2021021858号</a> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">Vittore Zhang @ Yume Shoka</span></div><div class="count"><span class="post-meta-item-icon"><i class="ic i-chart-area"></i> </span><span title="站点总字数">6k 字</span> <span class="post-meta-divider">|</span> <span class="post-meta-item-icon"><i class="ic i-coffee"></i> </span><span title="站点阅读时长">5 分钟</span></div><div class="powered-by">2019 – <span itemprop="copyrightYear">2022</span> 基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"axios-源码阅读/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script></body></html>

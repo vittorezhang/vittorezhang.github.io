@@ -10,20 +10,20 @@
         </author>
         <description>所致甚少，唯善学</description>
         <language>zh-CN</language>
-        <pubDate>Thu, 31 Mar 2022 16:49:10 +0800</pubDate>
-        <lastBuildDate>Thu, 31 Mar 2022 16:49:10 +0800</lastBuildDate>
+        <pubDate>Wed, 20 Apr 2022 14:51:45 +0800</pubDate>
+        <lastBuildDate>Wed, 20 Apr 2022 14:51:45 +0800</lastBuildDate>
         <category term="关键词1" />
         <category term="关键词2" />
         <item>
-            <guid isPermalink="true">http://example.com/2022/03/31/IT%E7%BC%96%E7%A8%8B/</guid>
+            <guid isPermalink="true">http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</guid>
             <title>IT 编程</title>
-            <link>http://example.com/2022/03/31/IT%E7%BC%96%E7%A8%8B/</link>
+            <link>http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</link>
             <category term="读书" scheme="http://example.com/categories/%E8%AF%BB%E4%B9%A6/" />
             <category term="名言警句" scheme="http://example.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
-            <pubDate>Thu, 31 Mar 2022 16:49:10 +0800</pubDate>
+            <pubDate>Wed, 20 Apr 2022 14:51:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;人的一切痛苦，本质上都是对自己无能的愤怒。&lt;/p&gt;
 &lt;h2 id=&#34;王小波&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#王小波&#34;&gt;#&lt;/a&gt; 王小波&lt;/h2&gt;
-&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
  像电脑一样思考（要学会读代码）&lt;a href=&#34;/programConcept/&#34;&gt;基本理念&lt;/a&gt;.&lt;/p&gt;
  ]]></description>
         </item>
@@ -36,9 +36,10 @@
             <pubDate>Tue, 29 Mar 2022 10:48:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;这个系列是本人参加了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL3J1b2NodWFuMTI=&#34;&gt;若川&lt;/span&gt;大佬的源码共读活动，自己的阅读笔记留存。&lt;br /&gt;
 本系列会记录如何高效学习源码、如何调试源码、以及自己的一些思考、收获等。&lt;/p&gt;
-&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;/validate-npm-package-name-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/&#34;&gt;validate-npm-package-name 检测 npm 包名&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/axios-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/&#34;&gt;axios-utils 基础工具函数&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
  ]]></description>
         </item>
@@ -50,7 +51,7 @@
             <category term="browser" scheme="http://example.com/tags/browser/" />
             <pubDate>Wed, 21 Apr 2021 09:30:53 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;对于一个前端初学者来说，this 的指向是一个必须要掌握的知识点，尤其是 ES6 之后的 this 指向更加变得飘忽不定，我们今天就来了解一下在 browser 中各种情况下 this 的指向。&lt;/p&gt;
-&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;什么是-this&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是-this&#34;&gt;#&lt;/a&gt; 什么是 this&lt;/h2&gt;
 &lt;p&gt;首先，this 不是一个函数也不是某个对象，它具体指向什么东西取决于我们在哪里去调用这个 this，只有函数调用的时候才会发生 this 的绑定，主要有有以下几种情况&lt;/p&gt;
 &lt;ul&gt;
@@ -140,7 +141,7 @@
             <category term="Node.js" scheme="http://example.com/tags/Node-js/" />
             <pubDate>Tue, 20 Apr 2021 17:37:39 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天看到一道面试题，是一道关于 this 指向的，觉着挺有价值的，this 的指向在浏览器与 node 中的指向又有区别，而 nodejs 中的 this 又经常会变，其在不同的代码位置中代表不同的涵义，在实际开发中，大家可能也会习惯性写 var self = this 这样的代码，哈哈。本文以此探讨下 this！！&lt;/p&gt;
-&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/images/logo01.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;干就完了&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;this-的应用场景&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#this-的应用场景&#34;&gt;#&lt;/a&gt; this 的应用场景&lt;/h2&gt;
 &lt;ul&gt;
@@ -170,7 +171,7 @@
             <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Mon, 19 Apr 2021 17:06:12 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;我们在进行项目开发的时候，为了更好的管理项目、追溯项目历史，我们会采用代码管理。一般常用的有 git svn 等，但是项目的开发、测试、上线往往都是有很多工作，如果没有一个合适的管理规范那会导致项目出现一下不必要的麻烦。可能各个公司有不同的管理方式，本文分享一下我们一直沿用的 GIT 分支管理规范。&lt;br /&gt;
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/images/git_01.jpg&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;Git Flow&#34; /&gt;&lt;/p&gt;
 &lt;h2 id=&#34;git-常用命令&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-常用命令&#34;&gt;#&lt;/a&gt; Git 常用命令&lt;/h2&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;远程URL&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 克隆远程仓库代码&lt;span class=&#34;token punctuation&#34;&gt;(&lt;/span&gt;默认拉取到的是master分支&lt;span class=&#34;token punctuation&#34;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; checkout &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 切换到指定分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; rebase &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 合并指定分支的代码&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; origin &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;远程git&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; remote -v 查看git的链接URL&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; status 查看仓库状态&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; &lt;span class=&#34;token function&#34;&gt;add&lt;/span&gt; &lt;span class=&#34;token builtin class-name&#34;&gt;.&lt;/span&gt; 提交本地修改到暂存区&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; commit -m &lt;span class=&#34;token string&#34;&gt;&#39;提交更改的备注&#39;&lt;/span&gt; 将暂存区提交到本地仓库&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; push origin &lt;span class=&#34;token operator&#34;&gt;&amp;lt;&lt;/span&gt;分支&lt;span class=&#34;token operator&#34;&gt;&gt;&lt;/span&gt; 推送本地仓库更改的分支到远程仓库的分支&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;git-flow常用的分支&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#git-flow常用的分支&#34;&gt;#&lt;/a&gt; Git Flow 常用的分支&lt;/h2&gt;
@@ -230,7 +231,7 @@
 &lt;p&gt;一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。&lt;/p&gt;
 &lt;p&gt;一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。&lt;/p&gt;
 &lt;p&gt;Vite 意在提供开箱即用的配置，同时它的 插件 API 和 JavaScript API 带来了高度的可扩展性，并有完整的类型支持。&lt;br /&gt;
-&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;vite与vuecli的区别&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#vite与vuecli的区别&#34;&gt;#&lt;/a&gt; Vite 与 vue/Cli 的区别&lt;/h2&gt;
 &lt;p&gt;这两天听了拉勾老师的直播课，总结了当下流行的 Vite 构建工具结合 Vue 的使用，以及与 vue/Cli 的区别。&lt;br /&gt;
 &lt;!-- more --&gt;&lt;br /&gt;
@@ -262,7 +263,7 @@
             <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Mon, 29 Mar 2021 17:58:38 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;web 集成了所有博主在开发与学习中接触过以及使用过的前端技术，以及相关的使用和介绍，例如：React、Vue2、Vue3、React-Redux、Redux、Vuex、Express、koa 以及各种技术...&lt;/p&gt;
-&lt;p&gt;&lt;a id=&#34;more&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;javascript&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#javascript&#34;&gt;#&lt;/a&gt; javascript&lt;/h2&gt;
 &lt;p&gt;在项目开发中，数组 (Array) 是非常常见的数据结构，那什么是数据结构？&lt;/p&gt;
 &lt;ul&gt;
