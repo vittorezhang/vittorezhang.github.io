@@ -3,8 +3,8 @@
     <channel>
         <title>Vittore</title>
         <subtitle>高山仰止，景行行止；虽不能至，心向往之。</subtitle>
-        <icon>http://example.com/images/favicon.ico</icon>
-        <link>http://example.com</link>
+        <icon>https://case.vittoreblog.com/images/favicon.ico</icon>
+        <link>https://case.vittoreblog.com</link>
         <author>
           <name>Vittore Zhang</name>
         </author>
@@ -15,11 +15,11 @@
         <category term="关键词1" />
         <category term="关键词2" />
         <item>
-            <guid isPermalink="true">http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</guid>
             <title>IT 编程</title>
-            <link>http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</link>
-            <category term="读书" scheme="http://example.com/categories/%E8%AF%BB%E4%B9%A6/" />
-            <category term="名言警句" scheme="http://example.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
+            <link>https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</link>
+            <category term="读书" scheme="https://case.vittoreblog.com/categories/%E8%AF%BB%E4%B9%A6/" />
+            <category term="名言警句" scheme="https://case.vittoreblog.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
             <pubDate>Wed, 20 Apr 2022 14:51:45 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;人的一切痛苦，本质上都是对自己无能的愤怒。&lt;/p&gt;
 &lt;h2 id=&#34;王小波&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#王小波&#34;&gt;#&lt;/a&gt; 王小波&lt;/h2&gt;
@@ -28,11 +28,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</guid>
             <title>源码阅读系列</title>
-            <link>http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="源码阅读" scheme="http://example.com/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
+            <link>https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="源码阅读" scheme="https://case.vittoreblog.com/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
             <pubDate>Tue, 29 Mar 2022 10:48:28 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;这个系列是本人参加了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL3J1b2NodWFuMTI=&#34;&gt;若川&lt;/span&gt;大佬的源码共读活动，自己的阅读笔记留存。&lt;br /&gt;
 本系列会记录如何高效学习源码、如何调试源码、以及自己的一些思考、收获等。&lt;/p&gt;
@@ -44,11 +44,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
             <title>浏览器环境中this的指向</title>
-            <link>http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="browser" scheme="http://example.com/tags/browser/" />
+            <link>https://case.vittoreblog.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="browser" scheme="https://case.vittoreblog.com/tags/browser/" />
             <pubDate>Wed, 21 Apr 2021 09:30:53 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;对于一个前端初学者来说，this 的指向是一个必须要掌握的知识点，尤其是 ES6 之后的 this 指向更加变得飘忽不定，我们今天就来了解一下在 browser 中各种情况下 this 的指向。&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -134,11 +134,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</guid>
             <title>node.js中this的指向</title>
-            <link>http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="Node.js" scheme="http://example.com/tags/Node-js/" />
+            <link>https://case.vittoreblog.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="Node.js" scheme="https://case.vittoreblog.com/tags/Node-js/" />
             <pubDate>Tue, 20 Apr 2021 17:37:39 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;今天看到一道面试题，是一道关于 this 指向的，觉着挺有价值的，this 的指向在浏览器与 node 中的指向又有区别，而 nodejs 中的 this 又经常会变，其在不同的代码位置中代表不同的涵义，在实际开发中，大家可能也会习惯性写 var self = this 这样的代码，哈哈。本文以此探讨下 this！！&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -164,11 +164,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</guid>
             <title>git日常开发常见操作</title>
-            <link>http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <link>https://case.vittoreblog.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Mon, 19 Apr 2021 17:06:12 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;我们在进行项目开发的时候，为了更好的管理项目、追溯项目历史，我们会采用代码管理。一般常用的有 git svn 等，但是项目的开发、测试、上线往往都是有很多工作，如果没有一个合适的管理规范那会导致项目出现一下不必要的麻烦。可能各个公司有不同的管理方式，本文分享一下我们一直沿用的 GIT 分支管理规范。&lt;br /&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -221,11 +221,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</guid>
             <title>Vue3.0+Vite避坑指南</title>
-            <link>http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <link>https://case.vittoreblog.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Fri, 16 Apr 2021 19:06:47 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;Vite（法语意为 &amp;quot;快速的&amp;quot;，发音 /vit/，发音同 &amp;quot;veet&amp;quot;）是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：&lt;/p&gt;
 &lt;p&gt;一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。&lt;/p&gt;
@@ -256,11 +256,11 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</guid>
+            <guid isPermalink="true">https://case.vittoreblog.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</guid>
             <title>前端杂烩</title>
-            <link>http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</link>
-            <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-            <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+            <link>https://case.vittoreblog.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</link>
+            <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+            <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
             <pubDate>Mon, 29 Mar 2021 17:58:38 +0800</pubDate>
             <description><![CDATA[ &lt;p&gt;web 集成了所有博主在开发与学习中接触过以及使用过的前端技术，以及相关的使用和介绍，例如：React、Vue2、Vue3、React-Redux、Redux、Vuex、Express、koa 以及各种技术...&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;

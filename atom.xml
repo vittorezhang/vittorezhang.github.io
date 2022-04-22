@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>http://example.com</id>
+    <id>https://case.vittoreblog.com</id>
     <title>Vittore</title>
     <subtitle>高山仰止，景行行止；虽不能至，心向往之。</subtitle>
-    <icon>http://example.com/images/favicon.ico</icon>
-    <link href="http://example.com" />
+    <icon>https://case.vittoreblog.com/images/favicon.ico</icon>
+    <link href="https://case.vittoreblog.com" />
     <author>
       <name>Vittore Zhang</name>
     </author>
@@ -12,22 +12,22 @@
     <category term="关键词1" />
     <category term="关键词2" />
     <entry>
-        <id>http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</id>
+        <id>https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/</id>
         <title>IT 编程</title>
-        <link rel="alternate" href="http://example.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/"/>
         <content type="html">&lt;p&gt;人的一切痛苦，本质上都是对自己无能的愤怒。&lt;/p&gt;
 &lt;h2 id=&#34;王小波&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#王小波&#34;&gt;#&lt;/a&gt; 王小波&lt;/h2&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;br /&gt;
  像电脑一样思考（要学会读代码）&lt;a href=&#34;/programConcept/&#34;&gt;基本理念&lt;/a&gt;.&lt;/p&gt;
 </content>
-        <category term="读书" scheme="http://example.com/categories/%E8%AF%BB%E4%B9%A6/" />
-        <category term="名言警句" scheme="http://example.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
+        <category term="读书" scheme="https://case.vittoreblog.com/categories/%E8%AF%BB%E4%B9%A6/" />
+        <category term="名言警句" scheme="https://case.vittoreblog.com/tags/%E5%90%8D%E8%A8%80%E8%AD%A6%E5%8F%A5/" />
         <updated>2022-04-20T06:51:45.155Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</id>
+        <id>https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/</id>
         <title>源码阅读系列</title>
-        <link rel="alternate" href="http://example.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/"/>
         <content type="html">&lt;p&gt;这个系列是本人参加了&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cueXVxdWUuY29tL3J1b2NodWFuMTI=&#34;&gt;若川&lt;/span&gt;大佬的源码共读活动，自己的阅读笔记留存。&lt;br /&gt;
 本系列会记录如何高效学习源码、如何调试源码、以及自己的一些思考、收获等。&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
@@ -36,14 +36,14 @@
 &lt;li&gt;&lt;a href=&#34;/axios-%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/&#34;&gt;axios-utils 基础工具函数&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="源码阅读" scheme="http://example.com/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="源码阅读" scheme="https://case.vittoreblog.com/tags/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB/" />
         <updated>2022-03-29T02:48:28.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</id>
+        <id>https://case.vittoreblog.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</id>
         <title>浏览器环境中this的指向</title>
-        <link rel="alternate" href="http://example.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2021/04/21/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%8E%AF%E5%A2%83%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/"/>
         <content type="html">&lt;p&gt;对于一个前端初学者来说，this 的指向是一个必须要掌握的知识点，尤其是 ES6 之后的 this 指向更加变得飘忽不定，我们今天就来了解一下在 browser 中各种情况下 this 的指向。&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;什么是-this&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#什么是-this&#34;&gt;#&lt;/a&gt; 什么是 this&lt;/h2&gt;
@@ -126,14 +126,14 @@
 &lt;img data-src=&#34;/images/browser13.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;apply()方法更改this指向&#34; /&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="browser" scheme="http://example.com/tags/browser/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="browser" scheme="https://case.vittoreblog.com/tags/browser/" />
         <updated>2021-04-21T01:30:53.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</id>
+        <id>https://case.vittoreblog.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/</id>
         <title>node.js中this的指向</title>
-        <link rel="alternate" href="http://example.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2021/04/20/node-js%E4%B8%ADthis%E7%9A%84%E6%8C%87%E5%90%91/"/>
         <content type="html">&lt;p&gt;今天看到一道面试题，是一道关于 this 指向的，觉着挺有价值的，this 的指向在浏览器与 node 中的指向又有区别，而 nodejs 中的 this 又经常会变，其在不同的代码位置中代表不同的涵义，在实际开发中，大家可能也会习惯性写 var self = this 这样的代码，哈哈。本文以此探讨下 this！！&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/images/logo01.png&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;干就完了&#34; /&gt;&lt;/p&gt;
@@ -156,14 +156,14 @@
 &lt;p&gt;可以看到在 Node 环境下，构造函数中 this 指向的是它的实例，而不是 global 了。&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="Node.js" scheme="http://example.com/tags/Node-js/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="Node.js" scheme="https://case.vittoreblog.com/tags/Node-js/" />
         <updated>2021-04-20T09:37:39.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</id>
+        <id>https://case.vittoreblog.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/</id>
         <title>git日常开发常见操作</title>
-        <link rel="alternate" href="http://example.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2021/04/19/git%E6%97%A5%E5%B8%B8%E5%BC%80%E5%8F%91%E5%B8%B8%E8%A7%81%E6%93%8D%E4%BD%9C/"/>
         <content type="html">&lt;p&gt;我们在进行项目开发的时候，为了更好的管理项目、追溯项目历史，我们会采用代码管理。一般常用的有 git svn 等，但是项目的开发、测试、上线往往都是有很多工作，如果没有一个合适的管理规范那会导致项目出现一下不必要的麻烦。可能各个公司有不同的管理方式，本文分享一下我们一直沿用的 GIT 分支管理规范。&lt;br /&gt;
 &lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img data-src=&#34;/images/git_01.jpg&#34; alt=&#34;Philadelphia&#39;s Magic Gardens. This place was so cool!&#34; title=&#34;Git Flow&#34; /&gt;&lt;/p&gt;
@@ -213,14 +213,14 @@
 &lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuYm9vdGNzcy5jb20vcC9naXQtZ3VpZGUv&#34;&gt;https://www.bootcss.com/p/git-guide/&lt;/span&gt;&lt;br /&gt;
 &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3Yy&#34;&gt;https://git-scm.com/book/zh/v2&lt;/span&gt;&lt;/p&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
         <updated>2021-04-19T09:06:12.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</id>
+        <id>https://case.vittoreblog.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/</id>
         <title>Vue3.0+Vite避坑指南</title>
-        <link rel="alternate" href="http://example.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2021/04/16/Vue3-0-Vite%E9%81%BF%E5%9D%91%E6%8C%87%E5%8D%97/"/>
         <content type="html">&lt;p&gt;Vite（法语意为 &amp;quot;快速的&amp;quot;，发音 /vit/，发音同 &amp;quot;veet&amp;quot;）是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：&lt;/p&gt;
 &lt;p&gt;一个开发服务器，它基于 原生 ES 模块 提供了 丰富的内建功能，如速度快到惊人的 模块热更新（HMR）。&lt;/p&gt;
 &lt;p&gt;一套构建指令，它使用 Rollup 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。&lt;/p&gt;
@@ -248,14 +248,14 @@
  2. vite 不支持 process.env (可以替换为 &#39;/&#39;)  vueCli 支持&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
         <updated>2021-04-16T11:06:47.000Z</updated>
     </entry>
     <entry>
-        <id>http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</id>
+        <id>https://case.vittoreblog.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/</id>
         <title>前端杂烩</title>
-        <link rel="alternate" href="http://example.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
+        <link rel="alternate" href="https://case.vittoreblog.com/2021/03/29/%E5%89%8D%E7%AB%AF%E6%9D%82%E7%83%A9/"/>
         <content type="html">&lt;p&gt;web 集成了所有博主在开发与学习中接触过以及使用过的前端技术，以及相关的使用和介绍，例如：React、Vue2、Vue3、React-Redux、Redux、Vuex、Express、koa 以及各种技术...&lt;/p&gt;
 &lt;p&gt;&lt;span id=&#34;more&#34;&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;h2 id=&#34;javascript&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#javascript&#34;&gt;#&lt;/a&gt; javascript&lt;/h2&gt;
@@ -269,8 +269,8 @@
 &lt;p&gt;&lt;a href=&#34;/js/&#34;&gt;js 数组操作常用 Api&lt;/a&gt;.&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
-        <category term="技术" scheme="http://example.com/categories/%E6%8A%80%E6%9C%AF/" />
-        <category term="前端" scheme="http://example.com/tags/%E5%89%8D%E7%AB%AF/" />
+        <category term="技术" scheme="https://case.vittoreblog.com/categories/%E6%8A%80%E6%9C%AF/" />
+        <category term="前端" scheme="https://case.vittoreblog.com/tags/%E5%89%8D%E7%AB%AF/" />
         <updated>2021-03-29T09:58:38.000Z</updated>
     </entry>
 </feed>
