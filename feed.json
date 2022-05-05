@@ -3,20 +3,9 @@
     "title": "Vittore",
     "subtitle": "高山仰止，景行行止；虽不能至，心向往之。",
     "icon": "https://case.vittoreblog.com/images/favicon.ico",
-    "description": "所知甚少，唯善学",
+    "description": "所知甚少·唯善学",
     "home_page_url": "https://case.vittoreblog.com",
     "items": [
-        {
-            "id": "https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/",
-            "url": "https://case.vittoreblog.com/2022/04/20/IT%E7%BC%96%E7%A8%8B/",
-            "title": "IT 编程",
-            "date_published": "2022-04-20T06:51:45.155Z",
-            "content_html": "<p>人的一切痛苦，本质上都是对自己无能的愤怒。</p>\n<h2 id=\"王小波\"><a class=\"anchor\" href=\"#王小波\">#</a> 王小波</h2>\n<p><span id=\"more\"></span><br />\n 像电脑一样思考（要学会读代码）<a href=\"/programConcept/\">基本理念</a>.</p>\n",
-            "tags": [
-                "读书",
-                "名言警句"
-            ]
-        },
         {
             "id": "https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/",
             "url": "https://case.vittoreblog.com/2022/03/29/%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E7%B3%BB%E5%88%97/",
@@ -48,6 +37,17 @@
             "tags": [
                 "技术",
                 "Node.js"
+            ]
+        },
+        {
+            "id": "https://case.vittoreblog.com/2021/04/20/IT%E7%BC%96%E7%A8%8B/",
+            "url": "https://case.vittoreblog.com/2021/04/20/IT%E7%BC%96%E7%A8%8B/",
+            "title": "IT 编程",
+            "date_published": "2021-04-20T01:30:53.000Z",
+            "content_html": "<p>人的一切痛苦，本质上都是对自己无能的愤怒。</p>\n<h2 id=\"王小波\"><a class=\"anchor\" href=\"#王小波\">#</a> 王小波</h2>\n<p><span id=\"more\"></span><br />\n 像电脑一样思考（要学会读代码）<a href=\"/programConcept/\">基本理念</a>.</p>\n",
+            "tags": [
+                "读书",
+                "名言警句"
             ]
         },
         {
